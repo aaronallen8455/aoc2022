@@ -1,7 +1,7 @@
 use std::fs;
 use std::io;
 
-use crate::days::{day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11, day12, day13};
+use crate::days::{day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11, day12, day13, day14, day15};
 
 pub mod days;
 
@@ -43,6 +43,10 @@ fn main() {
         ("12", "2") => day12::part_2,
         ("13", "1") => day13::part_1,
         ("13", "2") => day13::part_2,
+        ("14", "1") => day14::part_1,
+        ("14", "2") => day14::part_2,
+        ("15", "1") => day15::part_1,
+        ("15", "2") => day15::part_2,
         _ => panic!("invalid day")
     };
     println!("{}", fun(&inp))
